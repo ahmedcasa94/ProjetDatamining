@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>FootballPredictor</title>
+  <meta name="description" content="FootballPredictor">
+  <meta name="author" content="RT5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+  <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+  <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+  <link type="text/css" rel="stylesheet" href="css/index.css"/>
+
+  
+</head>
+<body>
+    <header>
+        <div class="row main-header">
+            <div class="col s12 center-align">
+                <img src="img/soccer.svg" alt="Ball" align="absmiddle" class="icon-banner animated infinite bounce"/>
+                <h1 class="app-banner">
+                    <img src="img/world-cup.svg" class="icon-title-banner" /> SoccerPredictor
+                </h1>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col s12">
+            <p class="default-text center-align">
+                Start by choosing two opponents, and then click on <i>Predict</i>!
+            </p>
+        </div>
+    </div>
+    <!-- home selection -->
+    <div class="row">
+        <div class="col s12">
+            <h3 class="default-text center-align">
+                Home team
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s2 home-navigate-prev control navigate-prev">
+        </div>
+        <div class="col s8">
+            <div class="country-slider home-slider">
+            </div>
+        </div>
+        <div class="col s2 home-navigate-next navigate-next control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 center-align">
+            <select class="home-select slider-select">
+            </select>
+        </div>
+    </div>
+    <!-- end home selection -->
+    <!-- away selection -->
+    <div class="row">
+            <div class="col s12">
+                <h3 class="default-text center-align">
+                    Away team
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2 away-navigate-prev control navigate-prev">
+            </div>
+            <div class="col s8">
+                <div class="country-slider away-slider">
+                </div>
+            </div>
+            <div class="col s2 away-navigate-next navigate-next control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <select class="away-select slider-select">
+                </select>
+            </div>
+        </div>
+        <!-- end away selection -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <a class="waves-effect waves-light btn-large disabled predict">Predict</a>
+                <img class="loader" src="img/Blocks.svg"/>
+            </div>
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s4 center-align home-team"></div>
+                    <div class="col s4 center-align"><img src="img/football.svg" class ="flag-icon"/></div>
+                    <div class="col s4 center-align away-team"></div>                    
+                </div>
+
+                <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            </div>
+        </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/canvasjs.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
